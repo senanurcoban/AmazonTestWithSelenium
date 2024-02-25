@@ -1,27 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: Test_Add_Product_To_Cart
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.796 s <<< FAILURE! -- in Test_Add_Product_To_Cart
-Test_Add_Product_To_Cart -- Time elapsed: 2.796 s <<< ERROR!
-io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: "public"
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at BaseTest.setUp(BaseTest.java:19)
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.11 s <<< FAILURE! -- in Test_Add_Product_To_Cart
+Test_Add_Product_To_Cart.go_to_cart -- Time elapsed: 1.301 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Product was not added to cart! ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at Test_Add_Product_To_Cart.go_to_cart(Test_Add_Product_To_Cart.java:54)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.NumberFormatException: For input string: "public"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:665)
-	at java.base/java.lang.Integer.parseInt(Integer.java:781)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1272)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
-	... 9 more
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 

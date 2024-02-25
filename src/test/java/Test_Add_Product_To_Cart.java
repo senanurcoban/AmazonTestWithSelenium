@@ -21,6 +21,7 @@ public class Test_Add_Product_To_Cart extends BaseTest{
 	 @Order(1)
 	 public void search_a_product(){
 		 homePage = new HomePage(driver);
+		 homePage.acceptCookies();
 		 productsPage = new ProductsPage(driver);
 		 homePage.searchBox().search("Laptop");
 		 Assertions.assertTrue(productsPage.isOnProductPage(),"Not on products page!");
