@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Test_Add_Product_To_Cart
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.11 s <<< FAILURE! -- in Test_Add_Product_To_Cart
-Test_Add_Product_To_Cart.go_to_cart -- Time elapsed: 1.301 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.17 s <<< FAILURE! -- in Test_Add_Product_To_Cart
+Test_Add_Product_To_Cart.go_to_cart -- Time elapsed: 1.460 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Product was not added to cart! ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
